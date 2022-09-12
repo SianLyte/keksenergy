@@ -35,6 +35,8 @@
     "source/less/**/*.scss"
   ],
   "engines": {
-    "node": "^12.18.2"
+    "node": "^16.17.0",
+    "npm": "8.15.0"
+
   }
 }
