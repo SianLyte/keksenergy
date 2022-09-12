@@ -23,7 +23,7 @@
           </ul>
           <ul class="main-nav__list site-list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
+              <a class="main-nav__link" href="/source/index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
@@ -43,64 +43,64 @@
       программу питания для вашего кота
       </p>
       <form action="https://echo.htmlacademy.ru" method="get">
-        <ul class="form__auth">
-          <li class="form__item">
+        <ul class="form-auth">
+          <li class="form-auth__item">
             <label for="name">Имя:<sup>*</sup></label>
             <input required type="text" name="name" id="name" placeholder="Барсик">
           </li>
-          <li class="form__item">
+          <li class="form-auth__item">
             <label for="weight">Вес (кг):<sup>*</sup></label>
             <input required type="text" name="weight" id="weight" placeholder="7">
           </li>
-          <li class="form__item">
+          <li class="form-auth__item">
             <label for="age">Возраст (лет):<sup>*</sup></label>
             <input type="text" name="age" id="age" placeholder="7" required>
           </li>
         </ul>
-        <fieldset class="form__tarif-group">
+        <fieldset class="form-tarif-group">
           <legend class="visually-hidden">Выбор тарифа</legend>
-          <ul class="form__radio-list">
-            <li class="form__radio-item">
+          <ul class="form-tarif-group__radio-list">
+            <li class="form-tarif-group__radio-item">
               <label for="weight-loss"></label>
               <input type="radio" name="tarif-type" value="weight-loss" id="weight-loss">Похудение
             </li>
-            <li class="form__radio-item">
+            <li class="form-tarif-group__radio-item">
               <label for="weight-gain"></label>
               <input type="radio" name="tarif-type" value="weight-gain" id="weight-gain">Набор массы
             </li>
-            <li class="form__radio-item">
+            <li class="form-tarif-group__radio-item">
               <label for="dont-know"></label>
               <input type="radio" name="tarif-type" value="dont-know" id="dont-know">Не знаю (нужен ваш совет)
             </li>
           </ul>
         </fieldset>
-        <div class="form__contacts">
+        <section class="form-contacts">
           <h2 class="form__subtitle">Контактные данные (владельца кота)</h2>
           <label for="email">e-mail:<sup>*</sup></label>
           <input type="email" id="email" name="email" required placeholder="kuklachev@gmail.com">
           <label for="phone">телефон:<sup>*</sup></label>
           <input type="text" id="phone" name="phone" required placeholder="8 (960) 900-60-90">
-        </div>
-        <div class="form__comments">
+        </section>
+        <div class="form-comments">
           <h2 class="form__subtitle"></h2>
           <textarea name="textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
-        <fieldset class="form__additional">
+        <fieldset class="form-additional">
           <legend class="form__subtitle">Дополнительно</legend>
-          <ul class="form__checkbox-list">
-            <li class="form__checkbox-item">
+          <ul class="form-additional__checkbox-list">
+            <li class="form-additional__checkbox-item">
               <input type="checkbox" id="sweetener" name="additional" value="sweetener" checked>
               <label for="sweetener">Сахарозаменитель</label>
             </li>
-            <li class="form__checkbox-item">
+            <li class="form-additional__checkbox-item">
               <input type="checkbox" id="water" name="additional" value="water">
               <label for="water">Питьевая вода  </label>
             </li>
-            <li class="form__checkbox-item">
+            <li class="form-additional__checkbox-item">
               <input type="checkbox" id="milk" name="additional" value="milk">
               <label for="milk">Молоко</label>
             </li>
-            <li class="form__checkbox-item">
+            <li class="form-additional__checkbox-item">
               <input type="checkbox" id="vitamins" name="additional" value="vitamins">
               <label for="vitamins">Витамины</label>
             </li>
