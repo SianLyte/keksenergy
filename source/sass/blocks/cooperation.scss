@@ -1,0 +1,109 @@
+.cooperation__introduction-container {
+  display: flex;
+  padding: 28px 20px 22px;
+  @media (min-width: 768px) {
+    justify-content: space-between;
+    margin: 68px 30px 50px;
+    padding: 0;
+  }
+  @media (min-width: 1440px) {
+    width: 570px;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    padding: 66px 89px 50px 76px;
+    gap: 87px;
+    margin: 0;
+    margin-top: 95px;
+    margin-left: 110px;
+    box-sizing: border-box;
+  }
+}
+.cooperation__title {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #111111;
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 23px;
+    width: min-content;
+  }
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+.cooperation__img {
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 362px;
+  @media (min-width: 768px) {
+    width: 768px;
+    height: 400px;
+  }
+  @media (min-width: 1440px) {
+    width: 1440px;
+    height: 400px;
+  }
+
+}
+.cooperation__street,
+.cooperation__city {
+  margin: 0;
+  font-family: 'Arial';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.cooperation__street {
+  @media (min-width: 768px) {
+    width: min-content;
+    text-align: end;
+    margin-bottom: 10px;
+  }
+  @media (min-width: 1440px) {
+    text-align: left;
+    margin-bottom: 19px;
+  }
+}
+.cooperation__city {
+  @media (min-width: 768px) {
+    text-align: end;
+  }
+  @media (min-width: 1440px) {
+    text-align: left;
+  }
+}
+.cooperation__img-container {
+  position: relative;
+}
+.cooperation__map-pin {
+  position: absolute;
+  @media (max-width: 767px) {
+    top: 139px;
+    left: 134px;
+  }
+  @media (min-width:768px) {
+    left: 330px;
+    top: 146px;
+    width: 120px;
+    height: 106px;
+  }
+  @media (min-width: 1440px) {
+    left: auto;
+    right: 419px;
+  }
+
+}

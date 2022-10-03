@@ -1,0 +1,50 @@
+.contacts {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  align-items: end;
+  width: 130px;
+  grid-template-columns: repeat(3,19px);
+  gap: 36px;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    gap: 25px;
+    grid-template-columns: repeat(3,25px);
+  }
+}
+.contacts__item:first-child {
+  align-self: center;
+  @media (min-width: 768px) {
+    align-self: flex-end;
+  }
+}
+.contacts__link {
+  display: inline-block;
+  background-repeat: no-repeat;
+  color: #666666;
+}
+.contacts__icon--vk {
+  min-width: 22px;
+  min-height: 12px;
+  @media (min-width:768px) {
+    width: 29px;
+    height: 33px;
+  }
+}
+.contacts__icon--insta {
+  min-width: 16px;
+  min-height: 16px;
+  @media (min-width:768px) {
+    width: 23px;
+    height: 33px;
+  }
+}
+.contacts__icon--fb {
+  min-width: 10px;
+  min-height: 18px;
+  @media (min-width:768px) {
+    width: 13px;
+    height: 33px;
+  }
+}
