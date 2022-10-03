@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/oswaldmedium.woff2") ;
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/oswaldregular.woff");
+}
+
+.button {
+  display: block;
+  font-family: "Oswald",sans-serif;
+  font-weight: 400;
+  border: 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #68B738;
+}
+@import "blocks/main-nav.scss";
+
+@import "blocks/introduction.scss";
+
+@import "blocks/tarifs.scss";
+
+@import "blocks/advantages.scss";
+
+@import "blocks/example.scss";
+
+@import "blocks/cooperation.scss";
+
+@import "blocks/page-footer.scss";
+
+@import "blocks/contacts.scss";
+
+@import "blocks/catalog.scss";
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+html {
+  height: 100%;
+}
+html {
+  margin: 0 auto;
+}
+body {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 320px;
+  @media (min-width: 768px) {
+    width: 768px;
+    margin: 0 auto;
+  }
+  @media (min-width: 1440px) {
+    width: 1440px;
+  }
+}
+main {
+  flex-grow: 1;
+}
