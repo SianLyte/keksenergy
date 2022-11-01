@@ -5,7 +5,8 @@ const sass = require('gulp-sass')(require('sass'));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
-
+/* const csso = require("gulp-csso");
+const rename = require("gulp-rename"); */
 // Styles
 
 const styles = () => {
@@ -16,6 +17,8 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    /* .pipe(csso())
+    .pipe(rename("styles.min.css")) */
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     .pipe(sync.stream());

@@ -42,7 +42,6 @@
     row-gap: 144px;
     margin: 0 110px;
   }
-
 }
 .catalog__item {
   display: grid;
@@ -73,7 +72,7 @@
 .catalog__picture {
   grid-area: img;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .catalog__img {
   @media (min-width: 768px) {
@@ -206,7 +205,6 @@
     font-size: 16px;
     line-height: 18px;
     width: 180px;
-
   }
 }
 .button__show-more {
@@ -244,11 +242,9 @@
     @media (max-width: 767px) {
       transform: translateX(-15px) rotate(90deg);
     }
-
     @media (min-width: 768px) {
       width: 60px;
       transform: translateX(-30px) rotate(90deg);
     }
   }
 }
-
