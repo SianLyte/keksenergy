@@ -90,28 +90,54 @@
   line-height: 16px;
   text-transform: uppercase;
   margin: 0;
-  margin-left: 20px;
-  margin-bottom: 22px;
   text-decoration: none;
   color: #000000;
   @media (min-width: 768px) {
-    margin: 0 0 57px 52px;
     font-size: 20px;
     line-height: 30px;
   }
 }
-.tarifs__subtitle::after {
-  content: "";
-  position: absolute;
-  background-image: url("../../img/icon-right-arrow-long.svg");
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 12px;
-  right: -35px;
-  top: 3px;
+.tarifs__subtitle--longarrow {
+  position: relative;
+  bottom: 2px;
+  left: 13px;
   @media (min-width: 768px) {
-    top: 10px;
-    right: -50px;
+    left: 25px;
+  }
+  @media (min-width: 1440px) {
+    left: 28px;
+  }
+}
+.tarifs__subtitle--verylongarrow {
+  display: none;
+}
+.tarifs__subtitle-container {
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 22px;
+  @media (min-width: 768px) {
+    margin: 0 0 57px 52px;
+  }
+  &:hover .tarifs__subtitle--longarrow {
+    display: none;
+  }
+  &:hover .tarifs__subtitle--verylongarrow {
+    display: inline-block;
+    position: relative;
+    bottom: 2px;
+    left: 13px;
+    @media (min-width: 768px) {
+      left: 25px;
+    }
+    @media (min-width: 1440px) {
+      left: 28px;
+    }
+  }
+  &:active .tarifs__subtitle {
+    opacity: 0.3;
+  }
+  &:active .tarifs__subtitle--verylongarrow {
+    opacity: 0.3;
   }
 }
 .tarifs__img-slim {

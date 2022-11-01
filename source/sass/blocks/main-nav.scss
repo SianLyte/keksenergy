@@ -77,28 +77,16 @@
 }
 .main-nav__item--logo {
   display: block;
-  width: 190px;
-  height: 37px;
-  background-image: url("../../img/logo-mobile.svg");
-  background-repeat: no-repeat;
-  @media (min-width: 768px) {
-    background-image: url("../../img/logo-tablet.svg");
-    width: 174px;
-    height: 52px;
+  &:hover {
+    opacity: 0.8;
   }
-  @media (min-width: 1440px) {
-    margin-top: 0;
-    background-image: url("../../img/logo-desktop.svg");
-    width: 202px;
-    height: 59px;
-
+  &:active {
+    opacity: 0.6;
   }
 }
 .main-nav__index {
   .main-nav__link {
     @media (min-width: 1440px) {
-      font-size: 20px;
-      line-height: 30px;
       color: #FFFFFF;
     }
   }
@@ -116,21 +104,72 @@
     font-size: 18px;
     line-height: 24px;
   }
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 .main-nav__toggle {
-  margin: 23px 23px 0 0;
-  padding: 0;
   position: absolute;
+  right: 0;
+  margin: 25px 20px 0 0;
+  padding: 0;
+  width: 24px;
+  height: 20px;
+  background-color: white;
+  border: none;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  @media (min-width:768px) {
+    display: none;
+  }
+}
+.main-nav--opened .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 1px;
   width: 17px;
   height: 18px;
   border: 0;
   background-color: #ffffff;
   background-image: url("../../img/icon-close.svg");
   background-repeat: no-repeat;
-  right: 0;
   cursor: pointer;
   @media (min-width:768px) {
     display: none;
   }
+}
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 24px;
+  height: 1.5px;
+  box-shadow: 0 8px 0 0 black,
+              0 16px 0 0 black;
+  background-color: #000000;
+
+  cursor: pointer;
+  @media (min-width:768px) {
+    display: none;
+  }
+}
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+.main-nav--closed ul:last-child {
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+
 }
 

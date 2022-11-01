@@ -1,0 +1,51 @@
+.form-comments {
+  position: relative;
+  @media (min-width: 768px) {
+    margin-bottom: 65px;
+  }
+  .form__subtitle {
+    width: min-content;
+    padding-right: 22px;
+    margin-bottom: 34px;
+    margin-top: 0;
+    @media (min-width: 768px) {
+      margin-left: 30px;
+      margin-bottom: 76px;
+      padding: 0 39px;
+    }
+    @media (min-width: 1440px) {
+      margin-left: 70px;
+    }
+  }
+  textarea {
+    width: 280px;
+    height: 150px;
+    border: 1px solid #e7e7e7;
+    margin: 0 20px;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 13px 12px 13px 15px;
+    margin-bottom: 27px;
+    box-sizing: border-box;
+    resize: none;
+    &::placeholder {
+      color: #444444;
+    }
+    @media (min-width: 768px) {
+      width: 631px;
+      margin: 0 70px;
+      box-sizing: border-box;
+      font-size: 20px;
+      line-height: 30px;
+      height: 174px;
+    }
+    @media (min-width:1440px) {
+      width: 1220px;
+      margin: 0 110px;
+    }
+  }
+}
+

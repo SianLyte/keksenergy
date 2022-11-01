@@ -1,0 +1,122 @@
+.form {
+  @media (min-width: 768px) {
+    margin-bottom: 72px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.form__title {
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  margin: 27px 20px 37px;
+  @media (min-width: 768px) {
+    margin: 30px 3px 54px 30px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  @media (min-width: 1440px) {
+    margin: -39px 110px 56px;
+  }
+}
+.form__subtitle {
+  background-color: white;
+  width: fit-content;
+  width: 187px;
+  padding-left: 20px;
+  padding-right: 15px;
+  margin-bottom: 32px;
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+    width: fit-content;
+  }
+}
+.form__desc {
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 20px 39px;
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 70px 66px;
+  }
+  @media (min-width: 1440px) {
+    margin: 0 110px 66px;
+  }
+}
+::placeholder {
+  color: #444444;
+}
+.button__form {
+  margin: 0 20px;
+  margin-bottom: 21px;
+  padding: 7px 44px;
+  @media (min-width: 768px) {
+    margin: 0;
+    padding: 14px 67px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  @media (min-width: 1440px) {
+    padding: 14px 200px;
+  }
+}
+.form__remark {
+  margin: 0 20px;
+  padding: 0 60px;
+  font-family: 'Arial';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  margin-bottom: 32px;
+  @media (min-width: 768px) {
+    font-size: 16px;
+    padding: 0;
+    margin-left: 61px;
+    margin-bottom: 0;
+  }
+  @media (min-width: 1440px) {
+    margin-left: 81px;
+  }
+
+}
+.cooperation__introduction-container--form {
+  background: #f2f2f2;
+  @media (min-width: 768px) {
+    margin: 0;
+    padding: 62px 72px 59px;
+  }
+  @media (min-width: 1440px) {
+    background: #FFFFFF;
+    margin-left: 110px;
+    margin-top: 95px;
+  }
+}
+.form__button-container {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    margin: 0 70px;
+    align-items: center;
+  }
+  @media (min-width: 1440px) {
+    margin: 0 110px;
+  }
+}
+

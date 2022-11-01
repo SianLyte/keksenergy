@@ -21,7 +21,22 @@
   text-decoration: none;
   color: #ffffff;
   background-color: #68B738;
+  &:hover {
+    background: #5EAA2F;
+  }
+  &:active {
+    color: fade-out($color: #ffffff, $amount: 0.3);
+  }
 }
+.button--grey {
+  &:hover {
+    background: #EBEBEB;
+  }
+  &:active {
+    color: fade-out($color: #444444, $amount: 0.3);
+  }
+}
+@import "blocks/page-body.scss";
 @import "blocks/main-nav.scss";
 
 @import "blocks/introduction.scss";
@@ -39,6 +54,24 @@
 @import "blocks/contacts.scss";
 
 @import "blocks/catalog.scss";
+
+@import "blocks/add-goods.scss";
+
+@import "blocks/sales.scss";
+
+@import "blocks/form.scss";
+
+@import "blocks/form-auth.scss";
+
+@import "blocks/form-tarif-group.scss";
+
+@import "blocks/form-contacts.scss";
+
+@import "blocks/form-comments.scss";
+
+@import "blocks/form-additional.scss";
+
+@import "blocks/form-questionary.scss";
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -59,8 +92,9 @@ body {
   display: flex;
   min-height: 100%;
   flex-direction: column;
-  margin: 0 auto;
   width: 320px;
+  margin: 0 auto;
+
   @media (min-width: 768px) {
     width: 768px;
     margin: 0 auto;
@@ -71,4 +105,23 @@ body {
 }
 main {
   flex-grow: 1;
+}
+.line--green {
+  z-index: -1;
+  position: absolute;
+  width:320px;
+  background-color: #68B738;
+  height: 2px;
+  top: 13px;
+  @media (min-width: 768px) {
+    width: 768px;
+    top: 20px;
+  }
+  @media (min-width: 1440px) {
+    width: 1440px;
+    grid-area: title;
+  }
+}
+img {
+  max-width: 100%;
 }

@@ -7,7 +7,6 @@
   @media (min-width: 1440px) {
     margin: 0 110px;
     border: none;
-
   }
 }
 .advantages__title {
@@ -71,7 +70,10 @@
     margin: 0;
   }
 }
-.advantages__img {
+.advantages__img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 60px;
   height: 60px;
@@ -82,23 +84,10 @@
   @media (min-width: 768px) {
     width: 80px;
     height: 80px;
-    display: block;
     position: relative;
     margin-top: 40px;
     margin-bottom: 31px;
   }
-}
-.advantages__img--leaf {
-  background-image: url("../../img/advantage-leaf@1x.png");
-}
-.advantages__img--water {
-  background-image: url("../../img/advantage-powder@1x.png");
-}
-.advantages__img--fork {
-  background-image: url("../../img/advantage-dining@1x.png");
-}
-.advantages__img--watch {
-  background-image: url("../../img/advantage-clock@1x.png");
 }
 .advantages__number {
   display: none;

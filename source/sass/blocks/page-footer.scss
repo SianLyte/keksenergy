@@ -3,6 +3,9 @@
     margin-top: -4px;
   }
 }
+.page-footer__catalog {
+  background: #F2F2F2;
+}
 .page-footer__list {
   margin: 0;
   padding: 0;
@@ -45,12 +48,26 @@
     margin: 0;
   }
 }
+.page-footer__item:last-child{
+  &:hover .page-footer__copyright-logo {
+    fill: #68B738;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
 .footer-logo {
   display: inline-block;
   background-image: url("../../img/logo-footer.svg");
   background-repeat: no-repeat;
   width: 128px;
   height: 24px;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
 }
 .page-footer__copyright-title {
   margin: 0;
@@ -59,6 +76,7 @@
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+  text-decoration: none;
 }
 .page-footer__copyright-link {
   display: inline-block;

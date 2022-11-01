@@ -23,6 +23,13 @@
   display: inline-block;
   background-repeat: no-repeat;
   color: #666666;
+  cursor: pointer;
+  &:hover svg {
+    fill: #68B738;
+  }
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 .contacts__icon--vk {
   min-width: 22px;
